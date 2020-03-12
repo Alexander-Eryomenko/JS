@@ -2,14 +2,16 @@ var letters = []
 var str = "Backend As A Service"
 var arrStr = str.split(' ')
 for ( var i = 0; i < arrStr.length; i++ ){
-    var firstLetter = arrStr[i].charAt(0) + ','
+    letters.push (arrStr[i][0])
     console.log (firstLetter)
-    // Получил первые буквы, но не пойму как теперь закинуть в пустой массив.
 }
+console.log(letters)
+var lettersStr = letters.join (',')
+console.log (lettersStr)
+
 
 
 function tip (type) {
-
     if (typeof type === 'number'){
        console.log (new Date ())
     }
@@ -17,7 +19,6 @@ function tip (type) {
         console.log ("Неверный тип данных")
     }
 }
-
 tip (5)
 tip ('5')
 
