@@ -10,7 +10,7 @@ for ( var i = 0; i < arrStr.length; i++ ){
 function tip (type) {
 
     if (typeof type === 'number'){
-       return console.log (new Date ())
+       console.log (new Date ())
     }
     else {
         console.log ("Неверный тип данных")
