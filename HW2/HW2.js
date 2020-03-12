@@ -4,6 +4,7 @@ var arrStr = str.split(' ')
 for ( var i = 0; i < arrStr.length; i++ ){
     var firstLetter = arrStr[i].charAt(0) + ','
     console.log (firstLetter)
+    // Получил первые буквы, но не пойму как теперь закинуть в пустой массив.
 }
 
 
